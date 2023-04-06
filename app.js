@@ -1,13 +1,15 @@
 const express = require('express')
 const app = express()
 const port = 3000
+const morgan = require('morgan')
 
 app.use(express.static('public'))
+app.use(morgan('dev'))
 
-app.use((req,res, next) => {
-    console.log('Requête effectuée: ' + Date().toString());
-    next()
-})
+// app.use((req,res, next) => {
+//     console.log('Requête effectuée: ' + Date().toString());
+//     next()
+// })
 
 app.get('/home', function (req, res) { // equivalent du else if
 //   res.send('Hello World')
