@@ -14,7 +14,8 @@ const server = http.createServer( // accès à la méthode createServer
             fichier = "./HTML/profil.html";
         } else if ((( Request.url === '/contact') && Request.method === 'GET')){
             fichier = "./HTML/contact.html";
-        }
+        }else if ((( Request.url === '/product') && Request.method === 'GET')){
+            fichier = "./HTML/product.html";}
         else {
             fichier = "./HTML/404.html";
         }

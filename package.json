@@ -1,9 +1,9 @@
 {
   "name": "serveur_node",
   "version": "1.0.0",
-  "main": "nodeServeur.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon nodeServeur",
+    "start": "nodemon app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,7 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "express": "^4.18.2",
     "nodemon": "^2.0.22"
   }
 }
-
