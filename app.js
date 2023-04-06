@@ -6,6 +6,7 @@ const morgan = require('morgan')
 app.use(express.static('public'))
 app.use(morgan('dev'))
 
+
 // app.use((req,res, next) => {
 //     console.log('Requête effectuée: ' + Date().toString());
 //     next()
